@@ -7,7 +7,7 @@ package model;
 
 /**
  *
- * @author Esa M \ if 11
+ * @author Esa M \ if 11 \ 2017
  */
 public class Tugas_uts_latihan_2 {
 
