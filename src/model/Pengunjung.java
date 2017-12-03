@@ -10,7 +10,7 @@ package model;
  * @author faldi
  */
 public class Pengunjung {
-    private int noKTP;
+    private String noKTP;
     private String nama;
     private String jenKel;
     private String handuk;
@@ -18,11 +18,11 @@ public class Pengunjung {
     private String namaPaketFitness;
     private String hargaPaketFitness;
 
-    public int getNoKTP() {
+    public String getNoKTP() {
         return noKTP;
     }
 
-    public void setNoKTP(int noKTP) {
+    public void setNoKTP(String noKTP) {
         this.noKTP = noKTP;
     }
 
@@ -73,6 +73,7 @@ public class Pengunjung {
     public void setHargaPaketFitness(String hargaPaketFitness) {
         this.hargaPaketFitness = hargaPaketFitness;
     }
-    
-    public void cekHarga
-}
+
+    public void cekHarga() {
+
+    }}
