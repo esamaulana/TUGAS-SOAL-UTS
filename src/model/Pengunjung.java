@@ -15,8 +15,7 @@ public class Pengunjung {
     private String jenKel;
     private String handuk;
     private String cabang;
-    private String namaPaketFitness;
-    private String hargaPaketFitness;
+    private String paketFitness;
 
     public String getNoKTP() {
         return noKTP;
@@ -58,22 +57,12 @@ public class Pengunjung {
         this.cabang = cabang;
     }
 
-    public String getNamaPaketFitness() {
-        return namaPaketFitness;
+    public String getPaketFitness() {
+        return paketFitness;
     }
 
-    public void setNamaPaketFitness(String namaPaketFitness) {
-        this.namaPaketFitness = namaPaketFitness;
+    public void setPaketFitness(String paketFitness) {
+        this.paketFitness = paketFitness;
     }
-
-    public String getHargaPaketFitness() {
-        return hargaPaketFitness;
+    
     }
-
-    public void setHargaPaketFitness(String hargaPaketFitness) {
-        this.hargaPaketFitness = hargaPaketFitness;
-    }
-
-    public void cekHarga() {
-
-    }}
