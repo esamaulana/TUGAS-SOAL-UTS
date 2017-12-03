@@ -267,24 +267,29 @@ public class MainView extends javax.swing.JFrame {
 
         o.setNama(inputNama.getText());
         o.setNoKTP(inputKTP.getText());
-        o.setJenKel(kelamin);
         o.setCabang(comboCabang.getSelectedItem().toString());
-        o.setHanduk(handuk);
-        o.setHargaPaketFitness(paket);
+        
+        o.setPaketFitness(paket);
 
         if (cKecil.isSelected()) {
             handuk += "kecil";
-        }   if (cBesar.isSelected()) {
-                handuk += "besar";
-            }
+        }
+        if (cBesar.isSelected()) {
+            handuk += "besar";
+        }
 
-            if (radioMale.isSelected()) {
-                kelamin = "Male";
-            } else if (radioFemale.isSelected()) {
-                kelamin = "Female";
-            }
-            
-                    switch (paket) {
+        o.setHanduk(handuk);
+        
+        if (radioMale.isSelected()) {
+            kelamin = "Male";
+        } else if (radioFemale.isSelected()) {
+            kelamin = "Female";
+        }
+
+        o.setJenKel(kelamin);
+    
+
+        switch (paket) {
             case "Reguler":
                 biaya = 450000;
                 break;
@@ -300,13 +305,12 @@ public class MainView extends javax.swing.JFrame {
             default:
                 break;
         }
-        
 
         outputan.setText("Nama = " + o.getNama() + "\n" + "No. Ktp = " + o.getNoKTP() + "\n"
-                + "Jenis Kelamin = " + kelamin + "\n" + "Cabang = " + o.getCabang() + "\n" + "Jenis Handuk = "
-                + handuk + "\n" + "Paket Fitness = " + o.getHargaPaketFitness() + "\n" + "BIAYA PENDAFTARAN = " + biaya);
+                + "Jenis Kelamin = " + o.getJenKel() + "\n" + "Cabang = " + o.getCabang() + "\n" + "Jenis Handuk = "
+                + o.getHanduk() + "\n" + "Paket Fitness = " + o.getPaketFitness() + "\n" + "BIAYA PENDAFTARAN = " + biaya);
     }//GEN-LAST:event_bSimpanActionPerformed
-    
+
     /**
      * @param args the command line arguments
      */
